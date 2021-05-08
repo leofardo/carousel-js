@@ -1,0 +1,81 @@
+*{
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#container{
+	position: relative;
+}
+
+#divFotos{
+	width: 700px;
+	height: 400px;
+	display: flex;
+	overflow: hidden;
+	align-items: center;
+	border-radius: 10px;
+}
+
+#divFotos img{
+	width: 100%;
+	height: 100%;
+}
+
+#divBotoes{
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+}
+
+#divBotoes a{
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	border: 2px solid #eaeaea;
+	text-decoration: none;
+	margin: 0 4px;
+}
+
+.active{
+	background: #eaeaea;
+}
+
+.seta{
+	border: none;
+	border-radius: 10px;
+	background: none;
+	display: block;
+	cursor: pointer;
+	outline: 0;
+	margin: 0 15px;
+	color: #eaeaea;
+}
+
+#setaEsquerda{
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#setaDireita{
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.seta i{
+	font-size: 4em;
+}
